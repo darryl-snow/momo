@@ -1,0 +1,22 @@
+extends master
+
+// Mandatory, the page <title> tag would otherwise be empty
+block title
+	| Momo Fish &amp; Beauty Spa, Jersey, Channel Islands
+
+// CSS code only for this page, this WILL NOT be added to application.css
+block css
+
+// Javascript code only for this page, this WILL NOT be added to application.js
+block script
+
+
+block content
+	div.panel
+		div.main-image
+			div.container
+				img(src="/images/momo.jpg")
+		h3 Jersey, <br>Channel Islands
+		a.button(href="tel:01534880890") Make a booking: (0)1534-880-890
+		div.map-container
+		p.address Unit 8, Liberty Wharf, St. Helier

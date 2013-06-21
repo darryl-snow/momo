@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Julien Buty -- Boilerplate author -- @轩辕豪杰1
+    Darryl Snow -- Website author
+
+# THANKS
+
+    Julien, for the splendid boilerplate!
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Javascript
+    Jade, Stylus, CoffeeScript
+    Express
