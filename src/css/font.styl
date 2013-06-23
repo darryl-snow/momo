@@ -1,0 +1,42 @@
+@font-face
+	font-family 				'momo-icon-font'
+	src 						url('fonts/momo-icon-font.eot')
+	src 						url('fonts/momo-icon-font.eot?#iefix') format('embedded-opentype'),
+								url('fonts/momo-icon-font.woff') format('woff'),
+								url('fonts/momo-icon-font.ttf') format('truetype'),
+								url('fonts/momo-icon-font.svg#momo-icon-font') format('svg')
+	font-weight 				normal
+	font-style 					normal
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before
+	font-family 				'momo-icon-font'
+	content 					attr(data-icon)
+	speak 						none
+	font-weight 				normal
+	font-variant 				normal
+	text-transform 				none
+	line-height 				1
+	-webkit-font-smoothing 		antialiased
+
+.icon-phone, .icon-mail, .icon-star, .icon-facebook, .icon-twitter, .icon-calendar-alt-fill
+	font-family 				'momo-icon-font'
+	speak 						none
+	font-style 					normal
+	font-weight 				normal
+	font-variant 				normal
+	text-transform 				none
+	line-height 				1
+	-webkit-font-smoothing 		antialiased
+.icon-phone:before
+	content 					"\e000"
+.icon-mail:before
+	content 					"\e001"
+.icon-star:before
+	content 					"\e002"
+.icon-facebook:before
+	content 					"\e003"
+.icon-twitter:before
+	content 					"\e004"
+.icon-calendar-alt-fill:before
+	content 					"\e005"

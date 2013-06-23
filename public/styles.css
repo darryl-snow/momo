@@ -38,13 +38,68 @@ h3 {
   line-height: 1.4;
   margin: 20px 0;
 }
+.price-list h2,
+.special-offers h2 {
+  color: #fff;
+  text-shadow: 0 -2px 1px rgba(0,0,0,0.3);
+}
+@font-face {
+  font-family: 'momo-icon-font';
+  src: url("fonts/momo-icon-font.eot");
+  src: url("fonts/momo-icon-font.eot?#iefix") format('embedded-opentype'), url("fonts/momo-icon-font.woff") format('woff'), url("fonts/momo-icon-font.ttf") format('truetype'), url("fonts/momo-icon-font.svg#momo-icon-font") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[data-icon]:before {
+  font-family: 'momo-icon-font';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-phone,
+.icon-mail,
+.icon-star,
+.icon-facebook,
+.icon-twitter,
+.icon-calendar-alt-fill {
+  font-family: 'momo-icon-font';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-phone:before {
+  content: "\e000";
+}
+.icon-mail:before {
+  content: "\e001";
+}
+.icon-star:before {
+  content: "\e002";
+}
+.icon-facebook:before {
+  content: "\e003";
+}
+.icon-twitter:before {
+  content: "\e004";
+}
+.icon-calendar-alt-fill:before {
+  content: "\e005";
+}
 body {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #7dedd7), color-stop(6, #15967d));
-  background: -webkit-linear-gradient(top, #7dedd7 0px, #15967d 600px);
-  background: -moz-linear-gradient(top, #7dedd7 0px, #15967d 600px);
-  background: -o-linear-gradient(top, #7dedd7 0px, #15967d 600px);
-  background: -ms-linear-gradient(top, #7dedd7 0px, #15967d 600px);
-  background: linear-gradient(top, #7dedd7 0px, #15967d 600px);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #b1f4e7), color-stop(6, #1abc9c));
+  background: -webkit-linear-gradient(top, #b1f4e7 0px, #1abc9c 600px);
+  background: -moz-linear-gradient(top, #b1f4e7 0px, #1abc9c 600px);
+  background: -o-linear-gradient(top, #b1f4e7 0px, #1abc9c 600px);
+  background: -ms-linear-gradient(top, #b1f4e7 0px, #1abc9c 600px);
+  background: linear-gradient(top, #b1f4e7 0px, #1abc9c 600px);
   color: #666;
 }
 .panel {
@@ -89,19 +144,57 @@ body {
 .main-image .container img {
   margin: -30px 0 0 -5px;
 }
-.button {
-  background: #34495e;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  color: #fff;
+.button,
+.button:visited {
   display: inline-block;
-  padding: 10px;
+  color: #666;
+  font-size: 85%;
+  margin: 7.5px 25px;
   text-decoration: none;
 }
+@media (min-width:767px) {
+  .button,
+  .button:visited {
+    margin: 0 25px;
+  }
+}
+.button span,
+.button:visited span {
+  background: rgba(0,0,0,0.8);
+  -webkit-border-radius: 75px;
+  border-radius: 75px;
+  color: #fff;
+  display: block;
+  height: 75px;
+  margin-bottom: 25px/2;
+  width: 75px;
+}
+.button i,
+.button:visited i {
+  display: block;
+  font-size: 200%;
+  line-height: 75px;
+}
 .button:active,
+.button:visited:active,
 .button:focus,
-.button:hover {
-  background: #476481;
+.button:visited:focus,
+.button:hover,
+.button:visited:hover {
+  color: #333;
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  -ms-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+.button:active span,
+.button:visited:active span,
+.button:focus span,
+.button:visited:focus span,
+.button:hover span,
+.button:visited:hover span {
+  background: #15967d;
   -webkit-transition: 0.3s all ease-in-out;
   -moz-transition: 0.3s all ease-in-out;
   -o-transition: 0.3s all ease-in-out;
@@ -109,11 +202,22 @@ body {
   transition: 0.3s all ease-in-out;
 }
 .map-container {
-  border: 2px solid #fff;
+  border: 2px solid #000;
   height: 300px;
   margin-top: 25px;
 }
 .address {
   font-size: 85%;
   font-style: italic;
+}
+.page-footer {
+  background: #eee;
+  border-top: 1px solid #bbb;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+}
+.price-list {
+  margin: 50px 0;
 }
