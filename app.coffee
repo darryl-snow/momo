@@ -13,7 +13,7 @@ app = express()
 # Change 'dev' to 'prod' when deploying to production
 app.set('env', 'dev')
 
-app.configure 'dev', ->
+app.configure 'prod', ->
 
 	compile = (str, path) ->
 		stylus(str).set('filename', path).use nib()
