@@ -11,7 +11,7 @@ go = require './routes'
 
 app = express()
 # Change 'dev' to 'prod' when deploying to production
-app.set('env', 'dev')
+app.set('env', 'prod')
 
 app.configure 'prod', ->
 
