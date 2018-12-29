@@ -1,5 +1,4 @@
 # A simple ExpressJS based boilerplate
-# Artfully masterminded by Julien Buty
 
 express = require 'express'
 coffee = require 'coffee-middleware'
