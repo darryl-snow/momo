@@ -1,0 +1,43 @@
+extends master
+
+// Mandatory, the page <title> tag would otherwise be empty
+block title
+	| Momo Fish &amp; Beauty Spa, Jersey, Channel Islands
+
+// CSS code only for this page, this WILL NOT be added to application.css
+block css
+
+// Javascript code only for this page, this WILL NOT be added to application.js
+block script
+
+
+block content
+	div.panel
+		div.main-image
+			div.container
+				img(src="images/momo.jpg")
+		h3 Unit 8, Liberty Wharf,<br>St. Helier, Jersey,<br>Channel Islands<br>(+44) (0)1534 880-890
+		a.button(href="tel:01534880890")
+			span
+				i.icon-phone
+			| phone us
+		a.button(href="mailto:momofishspa@gmail.com")
+			span
+				i.icon-mail
+			| email us
+		a.button(href="http://facebook.com/momofishspa")
+			span
+				i.icon-facebook
+			| facebook us
+		div.map-container
+		p.address Unit 8, Liberty Wharf, St. Helier
+
+	div.panel.specials
+		h2 Special Offers
+		br
+		h4 £5 off!
+		p 5-7pm every <strong>Thursday</strong>
+		p £10 for 15-minute fish spa pedicure
+
+	//- div.price-list
+	//- 	h2 Services &amp; Prices

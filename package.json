@@ -1,0 +1,17 @@
+{
+  "name": "ExpressBoilerPlate",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "coffee-script": "*",
+    "stylus": "*",
+    "nib": "*",
+    "supervisor": "*",
+    "coffee-middleware": "*"
+  },
+  "scripts": {
+    "start": "supervisor app.coffee"
+  }
+}

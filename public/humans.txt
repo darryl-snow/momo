@@ -1,0 +1,12 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Darryl Snow -- Website author
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Javascript
+    Jade, Stylus, CoffeeScript
+    Express
